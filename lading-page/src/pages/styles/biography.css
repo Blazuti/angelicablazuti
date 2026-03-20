@@ -1,0 +1,33 @@
+.my_photo{
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.biography{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background-rose);
+
+    display: grid;
+    grid-template: repeat(10, 1fr)/ 50px repeat(10, 1fr) 50px;
+}
+
+.img_title_biography{
+    
+    grid-area: 2 / 2 / 4 / 7;
+}
+
+.text_biography{
+
+    grid-area: 5/ 2 /11 / 7;
+}
+
+.text_biography p{
+    font-family: 'lora';
+    font-size: 18px;
+    color: var(--color-font);
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+}

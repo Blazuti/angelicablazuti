@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background-rose: #d8b4a0;
+    --color-background-light-blue: #eceeef;
+    --color-font: #183150;
+    --color-font-neutra: rgb(148, 148, 148);
+    --color-font_img: #183150;
+    --grid-template: repeat(10, 1fr)/ 50px repeat(10, 1fr) 50px;
+    --grid-area: 8 / 2 / 11 / 4;
+}
+
+header{
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: radial-gradient(blue, rgb(166, 0, 255));
+}
+
+
+img{
+    width: 100%;
+    max-height: 100%;
+}
+
+/*CSS gerado com gemini com algumas modificações*/
+

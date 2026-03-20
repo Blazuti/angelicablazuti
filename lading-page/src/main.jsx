@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Index from './components/pages'
+import Index from './pages/category'
 
 
 createRoot(document.getElementById('root')).render(
