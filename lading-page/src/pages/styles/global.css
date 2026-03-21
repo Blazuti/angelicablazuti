@@ -77,14 +77,14 @@ p{
     align-items: center;
 }
 
-.card{
+.card_skills{
     font-family: 'lora', Arial, Helvetica, sans-serif;
     color: var(--color-font);
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.434);
+    background-color: rgba(255, 255, 255, 0.499);
     padding: 20px 10px;
     border-radius: 8px;
-    border-left: 6px solid ;
+    border-left: 6px solid var(--color-font);
 
     display: flex;
     flex-flow: column nowrap;
@@ -106,9 +106,12 @@ p{
 
     h3{
         font-size: 1.3em;
+        color: var(--color-font);
     }
 }
 
-.icon{
-    font-family: 1.5em;
+.icon img{
+    width: 30px;
 }
+
+

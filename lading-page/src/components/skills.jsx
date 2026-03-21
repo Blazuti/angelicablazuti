@@ -1,4 +1,8 @@
 import React from "react";
+import Icon_diamond from "../components/media/icon/diamond.png"
+import Icon_segurity from "../components/media/icon/segurity.png"
+import Icon_star from "../components/media/icon/star.png"
+
 export default function skills() {
   return (
     <section className="skills">
@@ -23,9 +27,10 @@ export default function skills() {
         </p>
       </div>*/}
       <div class="container_skills">
-        <div class="card">
+        <div class="card_skills">
           <div className="title_card">
-            <div class="icon">💎</div>
+            <div class="icon">
+              <img src={Icon_diamond} alt="img diamond" /></div>
             <h3>Alta Precisão</h3>
           </div>
           <p>
@@ -34,20 +39,24 @@ export default function skills() {
           </p>
         </div>
 
-        <div class="card">
+        <div class="card_skills">
           <div className="title_card">
-            <div class="icon">🛡️</div>
+            <div class="icon">
+              <img src={Icon_segurity} alt="img segurity" />
+            </div>
             <h3>Biossegurança</h3>
           </div>
           <p>
             Protocolos rigorosos de esterilização e uso exclusivo de joalheria
-            de alto padrão (Titânio).
+            de alto padrão (Titânio, Aço cirurgico, Prata e Ouro).
           </p>
         </div>
 
-        <div class="card">
+        <div class="card_skills">
           <div className="title_card">
-            <div class="icon">✨</div>
+            <div class="icon">
+              <img src={Icon_star} alt="img stars" />
+            </div>
             <h3>Acompanhamento</h3>
           </div>
           <p>
