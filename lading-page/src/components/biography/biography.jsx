@@ -4,7 +4,7 @@ import style from './biography.module.css'
 
 export default function biography() {
   return (
-    <section className={style.my_biogephy}>
+    <section className={style.my_biography}>
       <div className={style.biography}>
         <div className={style.title_biography}>
           <img src={Title_biography} alt="imagem titulo" />

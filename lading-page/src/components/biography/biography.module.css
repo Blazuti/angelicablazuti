@@ -5,9 +5,7 @@
     height: 100vh;
     max-width: 80%;
     margin: auto;
-}
-
-.my_biography{
+    
     display: flex;
     flex-flow: column;
     justify-content: center;
