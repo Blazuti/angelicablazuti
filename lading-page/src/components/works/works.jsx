@@ -6,7 +6,7 @@ import style from './works.module.css'
 
 
 export default function works() {
-  
+
   return (
     
     <div className={style.works}>
