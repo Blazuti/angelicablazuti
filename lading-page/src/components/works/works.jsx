@@ -1,10 +1,10 @@
 import React from "react";
 import Imagem001 from "../media/imgs/img_trabalho001.png";
 import Imagem002 from "../media/imgs/img_trabalho002.png";
-import Imagem003 from "../meida/imgs/img_trabalho003.png"
-import Imagem004 from "../meida/imgs/img_trabalho004.png"
-import Imagem005 from "../meida/imgs/img_trabalho005.png"
-import Imagem006 from "../meida/imgs/img_trabalho006.png"
+import Imagem003 from "../media/imgs/img_trabalho003.png";
+import Imagem004 from "../media/imgs/img_trabalho004.png";
+import Imagem005 from "../media/imgs/img_trabalho005.png";
+import Imagem006 from "../media/imgs/img_trabalho006.png";
 import ImageModal from "./ImageModal";
 import style from './works.module.css'
 

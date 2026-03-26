@@ -39,11 +39,13 @@
 }
 
 .closeButton {
+  color: white;
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
   font-size: 16px;

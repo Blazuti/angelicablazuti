@@ -13,7 +13,7 @@ export default function ImageModal({ imageSrc, alt }) {
       <div className={`${style.modalOverlay} ${isOpen ? style.open : ''}`} onClick={closeModal}>
         <div className={style.modalContent} onClick={(e) => e.stopPropagation()}>
           <img src={imageSrc} alt={alt} className={style.expandedImage} />
-          <button onClick={closeModal} className={style.closeButton}>Fechar</button>
+          <button onClick={closeModal} className={style.closeButton}>Close</button>
         </div>
       </div>
     </>
