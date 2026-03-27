@@ -8,6 +8,15 @@ import Imagem006 from "../media/imgs/img_trabalho006.png";
 import ImageModal from "./ImageModal";
 import style from './works.module.css'
 
+const images = {
+  trabalho001: Imagem001,
+  trabalho002: Imagem002,
+  trabalho003: Imagem003,
+  trabalho004: Imagem004,
+  trabalho005: Imagem005,
+  trabalho006: Imagem006,
+};
+
 
 
 export default function works() {
@@ -20,19 +29,19 @@ export default function works() {
         <div className={style.container_photos_inline}>
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={Imagem001} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho001} alt="foto trabalho" />
             </div>
           </div>
 
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={Imagem002} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho002} alt="foto trabalho" />
             </div>
           </div>
 
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={Imagem003} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho003} alt="foto trabalho" />
             </div>
           </div>
         </div>
@@ -40,19 +49,19 @@ export default function works() {
          <div className={style.container_photos_inline}>
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={Imagem004} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho004} alt="foto trabalho" />
             </div>
           </div>
 
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={Imagem005} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho005} alt="foto trabalho" />
             </div>
           </div>
 
           <div className={style.container_photo}>
             <div className={style.photo}>
-              <ImageModal imageSrc={Imagem006} alt="foto trabalho" />
+              <ImageModal imageSrc={images.trabalho006} alt="foto trabalho" />
             </div>
           </div>
         </div>
