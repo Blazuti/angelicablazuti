@@ -31,10 +31,20 @@
   transform: scale(1);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .expandedImage {
   max-width: 100%;
   max-height: 100%;
   display: block;
+  animation: fadeIn 0.5s ease-in-out;
   transition: transform 0.3s ease;
 }
 
@@ -52,11 +62,15 @@
 }
 
 .next, .prev{
+  width: 30%;
+  height: 30%;
   color: white;
+  background-color: transparent;
   padding: 5px;
   cursor: pointer;
   font-weight: bolder;
   font-size: larger;
+  border: none;
 }
 
 .prev{
@@ -66,6 +80,17 @@
 
 .next{
   position: absolute;
-  left: 95%;
+  left: 80%;
   top: 50%;
+}
+
+button:focus{
+  background-color: transparent;
+  transform: none;
+}
+
+button:active{
+  color: none;
+  background-color: none;
+  transform: none;
 }

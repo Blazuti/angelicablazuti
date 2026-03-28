@@ -6,9 +6,9 @@ import Imagem004 from "../media/imgs/img_trabalho004.png";
 import Imagem005 from "../media/imgs/img_trabalho005.png";
 import Imagem006 from "../media/imgs/img_trabalho006.png";
 import ImageModal from "./ImageModal";
-import style from './works.module.css'
+import style from './works.module.css';
 
-const images = {
+const images ={
   trabalho001: Imagem001,
   trabalho002: Imagem002,
   trabalho003: Imagem003,
