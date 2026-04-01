@@ -6,6 +6,7 @@ import Imagem004 from "../media/imgs/img_trabalho004.png";
 import Imagem005 from "../media/imgs/img_trabalho005.png";
 import Imagem006 from "../media/imgs/img_trabalho006.png";
 import ImageModal from "./ImageModal";
+import img_works from "../media/imgs/img_works.png";
 import style from "./works.module.css";
 
 const images = {
@@ -20,6 +21,31 @@ const images = {
 export default function works() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const imagesArray = Object.values(images);
+
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) {
+      handleNext();
+    }
+    if (isRightSwipe) {
+      handlePrev();
+    }
+  };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => 
@@ -36,8 +62,10 @@ export default function works() {
   return (
     <div className={style.works}>
       <div className={style.contain_works}>
-        <h1>My Works</h1>
-        <div className={style.photos}>
+        <div className={style.my_works}>
+          <img src={img_works} alt="" />
+        </div>
+        <div className={style.photos} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
           <button className={style.prev} onClick={handlePrev}>prev</button>
           <ImageModal imageSrc={images} 
           alt="foto trabalho" 

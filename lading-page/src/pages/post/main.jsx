@@ -3,6 +3,7 @@ import Cover from "../../components/cover/cover"
 import Biography from "../../components/biography/biography"
 import Skills from "../../components/skills/skills"
 import Works from "../../components/works/works"
+import Contact from "../../components/contact/contact";
 
 
 export default function main(){
@@ -13,6 +14,7 @@ export default function main(){
       <Biography/>
       <Skills/>
       <Works/>
+      <Contact/>
     </main>
   )
 }
