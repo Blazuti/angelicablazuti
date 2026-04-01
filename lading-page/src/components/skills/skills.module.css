@@ -19,7 +19,7 @@
 .card_skills{
     font-family: 'lora', Arial, Helvetica, sans-serif;
     color: var(--color-font);
-    width: 80%;
+    width: 90%;
     background-color: var(--color-cards);
     padding: 20px 10px;
     border-radius: 8px;

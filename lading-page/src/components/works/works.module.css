@@ -46,7 +46,7 @@
 }
 
 .elementFooter{
-    width: 30%;
+    width: 40%;
     height: 10px;
     display: flex;
     justify-content: space-between;
@@ -54,14 +54,15 @@
     gap: 10px;
 
     div{
-        width: 10%;
-        height: 10px;
+        width: 30%;
+        height: 6px;
         background-color: rgba(84, 84, 84, 0.781);
-        border-radius: 50%;
+        border-radius: 20px;
         opacity: 0.4;
     }
 
     div:nth-child(2){
+        transform: scale(1.2);
         opacity: 1;
     }
 }
@@ -91,14 +92,14 @@
 }
 
 .imageContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    
+    padding-top: 5%;
+
     display: flex;
+    align-items: center;
     flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 
