@@ -1,6 +1,3 @@
-
-@media (max-width: 768px){
-
 .my_biography{
     height: 100vh;
     max-width: 80%;
@@ -26,11 +23,40 @@
     display: flex;
     justify-content: center;
 }
-}
 
 @media (orientation: landscape){
     .my_biography{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .my_biography{
+        width: 100%;
+        height: auto;
+
+        align-items: space-between;
+        
+    }
+
+    .biography{
+        width: 50%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title_biography{
+        width: 100%;
         max-width: 400px;
+        height: auto;
+        margin: 15px auto;
+
+        display: flex;
+        justify-content: center;
     }
 
 }

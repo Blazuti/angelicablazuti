@@ -1,4 +1,4 @@
-@media (max-width: 768px){
+
   .contact {
     width: 100vw;
     height: 70vh;
@@ -74,27 +74,15 @@
       }
     }
   }
-}
 
-@media (orientation: landscape) {
-  .container_contact {
-    width: 70%;
-    height: 100%;
-    gap: 3rem;
-  }
-
-  .img_contatct {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      object-position: center;
-      width: 100%;
-      max-width: 400px;
+  @media (orientation: landscape) {
+    .contact {
+      width: 100vw;
       height: auto;
     }
+    .container_contact {
+      width: 80%;
+      height: auto;
+      margin: auto;
+    }
   }
-}

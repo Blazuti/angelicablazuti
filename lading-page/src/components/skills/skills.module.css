@@ -1,4 +1,3 @@
-@media (max-width: 768px){
     .skills{
     height: 100vh;
     max-width: 80%;
@@ -55,4 +54,45 @@
     width: 30px;
 }
 
+@media (orientation: landscape){
+    .skills{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .card_skills{
+        width: 80%;
+        max-width: 500px;
+        max-height: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .skills{
+        width: 100%;
+        height: auto;
+        display: flex;
+        
+    }
+
+    .container_skills{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .card_skills{
+        width: 30%;
+        height: auto;
+        min-height: 220px;
+        padding: 20px 10px;
+        justify-content: flex-start;
+        
+        .title_card{
+            word-break: break-all;
+            padding: 0px;
+            margin-bottom: 15px;
+        }
+    }
 }

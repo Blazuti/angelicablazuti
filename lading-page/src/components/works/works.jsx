@@ -5,6 +5,8 @@ import Imagem003 from "../media/imgs/img_trabalho003.png";
 import Imagem004 from "../media/imgs/img_trabalho004.png";
 import Imagem005 from "../media/imgs/img_trabalho005.png";
 import Imagem006 from "../media/imgs/img_trabalho006.png";
+import arow_Left from "../media/icon/seta-esquerda.png";
+import arow_Right from "../media/icon/seta-direita.png";
 import ImageModal from "./ImageModal";
 import img_works from "../media/imgs/img_works.png";
 import style from "./works.module.css";
@@ -66,12 +68,16 @@ export default function works() {
           <img src={img_works} alt="" />
         </div>
         <div className={style.photos} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
-          <button className={style.prev} onClick={handlePrev}>prev</button>
+          <button className={style.prev} onClick={handlePrev}>
+            <img src={arow_Left} alt="Seta esquerda" />
+          </button>
           <ImageModal imageSrc={images} 
           alt="foto trabalho" 
           currentIndex={currentIndex}
           />
-          <button className={style.next} onClick={handleNext}>next</button>
+          <button className={style.next} onClick={handleNext}>
+            <img src={arow_Right} alt="Seta direita" />
+          </button>
         </div>
       </div>
     </div>

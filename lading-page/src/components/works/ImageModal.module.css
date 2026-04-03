@@ -1,4 +1,3 @@
-@media (max-width: 768px){
   .modalOverlay {
     position: fixed;
     top: 0;
@@ -96,4 +95,3 @@
     background-color: none;
     transform: none;
   }
-}

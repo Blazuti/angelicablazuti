@@ -1,37 +1,18 @@
 import React from "react";
-import Icon_diamond from "../media/icon/diamond.png"
-import Icon_segurity from "../media/icon/segurity.png"
-import Icon_star from "../media/icon/star.png"
-import style from './skills.module.css'
+import Icon_diamond from "../media/icon/diamond.png";
+import Icon_segurity from "../media/icon/segurity.png";
+import Icon_star from "../media/icon/star.png";
+import style from "./skills.module.css";
 
 export default function skills() {
   return (
     <section className={style.skills}>
-      <div className={style.container_img_skills}></div>
-      {/*<div className="description_skills">
-        <p>
-          <li>
-            <ul>Bio Segurança e Esterilização</ul>
-          </li>
-          <br />
-          <li>
-            <ul>Anatomia e Marcação</ul>
-          </li>
-          <br />
-          <li>
-            <ul>Técnicas de Perfuração</ul>
-          </li>
-          <br />
-          <li>
-            <ul>Conhecimento de Jóias</ul>
-          </li>
-        </p>
-      </div>*/}
       <div className={style.container_skills}>
         <div className={style.card_skills}>
           <div className={style.title_card}>
             <div className={style.icon}>
-              <img src={Icon_diamond} alt="img diamond" /></div>
+              <img src={Icon_diamond} alt="img diamond" />
+            </div>
             <h3>Alta Precisão</h3>
           </div>
           <p>
