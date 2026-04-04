@@ -1,88 +1,119 @@
+.contact {
+  height: 70vh;
+}
 
-  .contact {
-    width: 100vw;
-    height: 70vh;
-  }
+.container_contact {
+  margin: auto;
+  padding-bottom: 15%;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
-  .container_contact {
-    margin: auto;
-    padding-bottom: 15%;
+.img_contatct {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-position: center;
     width: 90%;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .img_contatct {
-    width: 90%;
+    max-width: 400px;
     height: auto;
+  }
+}
+h2 {
+  background-color: #ffffff44;
+  color: var(--color-elements);
+  box-shadow: 0px 5px 10px var(--color-elements);
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 70%;
+  font-size: 1.3rem;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: normal;
+}
+.links {
+  display: flex;
+  gap: 2rem;
+
+  .instagram,
+  .whatsapp {
+    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.679);
+    background-image: linear-gradient(to top, var(--color-elements), #bc8a5f4d);
+    padding: 8px 15px;
+    border-radius: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 
     img {
-      object-position: center;
-      width: 90%;
-      max-width: 400px;
-      height: auto;
+      width: 28px;
+      height: 28px;
+    }
+
+    a {
+      font-family: "Lora", Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
     }
   }
-  h2 {
-    background-color: #ffffff44;
-    color: var(--color-elements);
-    box-shadow: 0px 5px 10px var(--color-elements);
-    border-radius: 8px;
-    padding: 15px 20px;
-    width: 70%;
-    font-size: 1.3rem;
-    margin: 20px auto;
-    text-align: center;
-    font-weight: normal;
+}
+
+@media (orientation: landscape) {
+  .contact {
+    width: 100%;
+    height: auto;
   }
-  .links {
-    display: flex;
-    gap: 2rem;
+  .container_contact {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+}
 
-    .instagram,
-    .whatsapp {
-      box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.679);
-      background-image: linear-gradient(
-        to top,
-        var(--color-elements),
-        #bc8a5f4d
-      );
-      padding: 8px 15px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+@media (min-width: 768px) {
 
-      img {
-        width: 28px;
-        height: 28px;
-      }
-
-      a {
-        font-family: "Lora", Arial, Helvetica, sans-serif;
-        font-size: 0.9rem;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-      }
+  .contact {
+    width: 100%;
+    height: auto;
+  }
+  .img_contact{
+        width: 100%;
     }
+  .info_contact {
+    margin-top: 50px;
+  }
+  .container_contact {
+    width: 90%;
+    height: auto;
+    margin: auto;
   }
 
-  @media (orientation: landscape) {
-    .contact {
-      width: 100vw;
-      height: auto;
-    }
-    .container_contact {
-      width: 80%;
-      height: auto;
-      margin: auto;
-    }
+  .instagram, .whatsapp {
+    width: 40%;
+    font-size: 1rem;
   }
+  .links{
+    height: 55px;
+    width: 350px;
+    margin-top: 50px;
+  }
+  .whatsapp:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+  }
+  .instagram:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+  }
+}

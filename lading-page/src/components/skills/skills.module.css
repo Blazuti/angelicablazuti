@@ -71,12 +71,13 @@
 
 @media (min-width: 768px){
     .skills{
-        width: 100%;
+        max-width: 100%;
         height: auto;
         display: flex;
+        margin-top: 50px;
         
     }
-
+    
     .container_skills{
         flex-flow: row nowrap;
         justify-content: space-between;
