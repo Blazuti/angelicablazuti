@@ -5,7 +5,7 @@ import style from './biography.module.css'
 
 export default function biography() {
   const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.15], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 
   return (
     <section className={style.my_biography}>

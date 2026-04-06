@@ -138,9 +138,9 @@
         justify-content: center;
     }
 
-    .contain_works{
-        min-width: 80%;
-        min-height: 90%;
+    .container_works{
+        max-width: 80%;
+        max-height: 90%;
         margin: 0px auto 10% auto;
     }
 
