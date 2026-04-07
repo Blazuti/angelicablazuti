@@ -16,7 +16,7 @@
 body{
     width: 100vw;
     height: auto;
-    background-color: var(--color-background);
+    background-color: var(--color-background) !important;
     overflow-x: hidden;
 }
 
@@ -27,10 +27,3 @@ p{
     color: var(--color-font);
 }
 
-@media (orientation: landscape){
-    body{
-        width: 80%;
-        height: auto;
-        margin: auto;
-    }
-}

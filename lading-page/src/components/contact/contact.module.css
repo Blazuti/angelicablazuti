@@ -1,5 +1,5 @@
 .contact {
-  height: 70vh;
+  min-height: 70vh;
   margin-top: 50px;
 }
 
@@ -82,7 +82,7 @@ h2 {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 680px) {
 
   .contact {
     width: 100%;

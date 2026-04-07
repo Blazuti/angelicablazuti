@@ -1,5 +1,5 @@
 .my_biography{
-    height: 100vh;
+    min-height: 100vh;
     max-width: 80%;
     margin: auto;
     
@@ -34,7 +34,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 680px) {
     .my_biography{
         width: 100%;
         height: auto;
