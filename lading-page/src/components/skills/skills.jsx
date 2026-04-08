@@ -8,7 +8,7 @@ import style from "./skills.module.css";
 export default function skills() {
 
   const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0.2, 0.35], [0, 1]);
+  const opacity = useTransform(scrollYProgress, [0.2, 0.4], [0, 1]);
 
   return (
     <motion.section className={style.skills}

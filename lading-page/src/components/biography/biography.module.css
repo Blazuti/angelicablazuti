@@ -37,7 +37,7 @@
 @media (min-width: 680px) {
     .my_biography{
         width: 100%;
-        height: auto;
+        max-height: 50vh;
         margin-top: 50px;
         align-items: space-between;
         
@@ -60,3 +60,4 @@
     }
 
 }
+
