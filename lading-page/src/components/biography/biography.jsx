@@ -2,6 +2,7 @@ import React from "react";
 import {motion, useScroll, useTransform} from "framer-motion";
 import Title_biography from "../media/imgs/title_biography.png"
 import style from './biography.module.css'
+import img_angelica from "../media/imgs/img_angelica002.png"
 
 export default function biography() {
   const { scrollYProgress } = useScroll();
@@ -37,6 +38,9 @@ export default function biography() {
             </strong>
           </p>
         </div>
+      </div>
+      <div className={style.img_biography}>
+        <img src={img_angelica} alt="imagem de biografia" />
       </div>
     </section>
   );
