@@ -32,10 +32,12 @@
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (orientation: landscape) {
     #carouselExample{
-        width: 90vw;
+        width: 50vw;
+        max-height: fit-content
     }
 }
+
 }
 @import 'bootstrap/dist/css/bootstrap.min.css';

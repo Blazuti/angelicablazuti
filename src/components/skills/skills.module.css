@@ -1,11 +1,16 @@
+
     .skills{
-    height: 100vh;
+        height: 50vh;
+    }
+
+.skills{
+    height: 90vh;
     max-width: 80%;
     margin: 0px auto 50px auto;
 }
 
 .container_skills{
-    height: 100vh;
+    height:100%;
     width: 100%;
     padding: 50px 0px;
 
@@ -55,48 +60,43 @@
 }
 
 @media (orientation: landscape){
-    .skills{
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-
+    
     .card_skills{
-        width: 80%;
-        max-width: 500px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
-@media (min-width: 680px){
+@media (min-width: 880px){
+
     .skills{
-        width: 100%;
-        max-height: 70vh;
+        min-width: 90%;
+        height: 40vh;
         display: flex;
         margin-top: 50px;
-        
     }
     
     .container_skills{
         height: auto;
+        width: 100%;
         flex-flow: row nowrap;
         justify-content: space-between;
     }
 
     .card_skills{
-        width: 30%;
+        min-height: 200px;
         height: auto;
-        min-height: 220px;
+        width: 30%;
         padding: 20px 10px;
         justify-content: flex-start;
         transition: 0.3s;
-        
+
         .title_card{
             word-break: break-all;
             padding: 0px;
             margin-bottom: 15px;
         }
     }
+    
 
     .card_skills:hover{
         transform: translateY(-5%);
