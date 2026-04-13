@@ -11,7 +11,7 @@ export default function cover(){
 
     return(
         <section className={style.cover}>
-            <video src={window.innerWidth < 768 ? VideoMobile : VideoDesktop} autoPlay muted playsInline loop></video>
+            <video src={window.innerWidth < 768 ? VideoMobile : VideoDesktop} autoPlay muted playsInline></video>
         </section>
     )
 }
